@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:lb="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              tools:context=".BitmapShaderActivity">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <org.hunter.irregularshapeviewlib.MultiView
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            lb:type="round"
+            android:src="@drawable/a"/>
+
+        <org.hunter.irregularshapeviewlib.MultiView
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            lb:type="circle"
+            android:src="@drawable/d"
+            />
+
+        <org.hunter.irregularshapeviewlib.MultiView
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            lb:type="round"
+            lb:borderRadius="40dp"
+            android:src="@drawable/c"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <org.hunter.irregularshapeviewlib.MultiView
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            lb:angleCount="5"
+            lb:type="multi"
+            android:src="@drawable/b"/>
+
+        <org.hunter.irregularshapeviewlib.MultiView
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            lb:angleCount="6"
+            lb:type="multi"
+            lb:currentAngle="0"
+            android:src="@drawable/e"
+            />
+
+        <org.hunter.irregularshapeviewlib.MultiView
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            lb:angleCount="5"
+            lb:type="multi"
+            lb:currentAngle="180"
+            android:src="@drawable/f"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <org.hunter.irregularshapeviewlib.MultiView
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_c"
+            android:src="@drawable/a"/>
+
+        <org.hunter.irregularshapeviewlib.MultiView
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_d"
+            android:src="@drawable/c"
+            />
+
+        <org.hunter.irregularshapeviewlib.MultiView
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_e"
+            android:src="@drawable/b"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <org.hunter.irregularshapeviewlib.MultiView
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_one"
+            android:src="@drawable/one"/>
+
+    </LinearLayout>
+</LinearLayout>

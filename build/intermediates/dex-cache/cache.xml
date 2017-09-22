@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\git\IrregularShapeView\irregularshapeviewlib\build\intermediates\bundles\default\libs\glide-3.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="015a639bd9933f4f812be8bede14f14bd1bdea8b">
+        <dex dex="D:\git\IrregularShapeView\app\build\intermediates\pre-dexed\debug\glide-3.6.1_069f758d0df51fbb253613a3c3df7f5b1e964504.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\git\IrregularShapeView\irregularshapeviewlib\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="480dab07477ec4b2de1e720034bb380e0e3be9bb">
+        <dex dex="D:\git\IrregularShapeView\app\build\intermediates\pre-dexed\debug\classes_430a64dd1183dcc63c7276c419db823d277e0330.jar" />
+    </item>
+
+</items>

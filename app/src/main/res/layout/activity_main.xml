@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="org.hunter.irregularshapeview.MainActivity">
+
+    <Button
+        android:id="@+id/PorterDuff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PorterDuff"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/BitmapShader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BitmapShader"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/ClipPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ClipPath"
+        android:padding="10dp"/>
+
+</LinearLayout>

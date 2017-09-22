@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.hunter.irregularshapeview.ClipPathActivity">
+
+    <org.hunter.irregularshapeview.QiQiaoLayout
+        android:id="@+id/activity_main_qiqiaolayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <org.hunter.irregularshapeviewlib.clippath.TriangleView
+            android:id="@+id/classify_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <org.hunter.irregularshapeviewlib.clippath.TriangleView
+            android:id="@+id/classify_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <org.hunter.irregularshapeviewlib.clippath.TriangleView
+            android:id="@+id/classify_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <org.hunter.irregularshapeviewlib.clippath.DiamondView
+            android:id="@+id/classify_4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <org.hunter.irregularshapeviewlib.clippath.TriangleView
+            android:id="@+id/classify_5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <org.hunter.irregularshapeviewlib.clippath.SquareView
+            android:id="@+id/classify_6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <org.hunter.irregularshapeviewlib.clippath.TriangleView
+            android:id="@+id/classify_7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <org.hunter.irregularshapeviewlib.clippath.TriangleView
+            android:id="@+id/classify_8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+    </org.hunter.irregularshapeview.QiQiaoLayout>
+
+</android.support.constraint.ConstraintLayout>
