@@ -266,24 +266,6 @@ public class MultiView extends android.support.v7.widget.AppCompatImageView {
         for (int i = 1; i < angleCount; i++) {
             mPath.lineTo(pointFList.get(i).x, pointFList.get(i).y);
         }
-        /*for (int i = 2; i < angleCount; i++) {
-            if (i % 2 == 0) {// 除以二取余数，余数为0则为偶数,否则奇数
-                mPath.lineTo(pointFList.get(i).x, pointFList.get(i).y);
-            }
-
-        }
-
-        if (angleCount % 2 == 0) {  //偶数，moveTo
-            mPath.moveTo(pointFList.get(1).x, pointFList.get(1).y);
-        } else {                    //奇数，lineTo
-            mPath.lineTo(pointFList.get(1).x, pointFList.get(1).y);
-        }
-
-        for (int i = 3; i < angleCount; i++) {
-            if (i % 2 != 0) {
-                mPath.lineTo(pointFList.get(i).x, pointFList.get(i).y);
-            }
-        }*/
 
         mPath.offset(startRadius, startRadius);
         return mPath;
