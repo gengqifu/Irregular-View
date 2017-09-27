@@ -6,6 +6,7 @@
             <enum name="circle" value="0" />
             <enum name="round" value="1" />
             <enum name="multi" value="3" />
+            <enum name="multi2" value="4" />
         </attr>
         <attr name="angleCount" format="integer" />
         <attr name="currentAngle" format="integer" />

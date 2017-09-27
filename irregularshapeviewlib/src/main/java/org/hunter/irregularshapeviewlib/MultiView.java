@@ -48,6 +48,11 @@ public class MultiView extends android.support.v7.widget.AppCompatImageView {
      */
     public static final int TYPE_MULTI = 3;
 
+    /*
+     * 外多边形
+     */
+    public static final int TYPE_MULTI2 = 4;
+
     /**
      * 默认多边形角的个数
      */
@@ -169,7 +174,7 @@ public class MultiView extends android.support.v7.widget.AppCompatImageView {
             setMeasuredDimension(mWidth, mWidth);
         }
 
-        if (type == TYPE_MULTI) {
+        if (type == TYPE_MULTI || type == TYPE_MULTI2) {
             mWidth = Math.min(getMeasuredWidth(), getMeasuredHeight());
 
             setMeasuredDimension(mWidth, mWidth);
@@ -213,7 +218,7 @@ public class MultiView extends android.support.v7.widget.AppCompatImageView {
                 scale = Math.max(getWidth() * 1.0f / bmp.getWidth(), getHeight() * 1.0f / bmp.getHeight());
             }
 
-        } else if (type == TYPE_MULTI) {
+        } else if (type == TYPE_MULTI || type == TYPE_MULTI2) {
             // 拿到bitmap宽或高的小值
             int bSize = Math.min(bmp.getWidth(), bmp.getHeight());
             scale = mWidth * 1.0f / bSize;
@@ -243,9 +248,45 @@ public class MultiView extends android.support.v7.widget.AppCompatImageView {
             Path mPath = drawPath();
 
             canvas.drawPath(mPath, mBitmapPaint);
+        } else if (type == TYPE_MULTI2) {
+            Path mPath = drawPath2();
+
+            canvas.drawPath(mPath, mBitmapPaint);
         } else {
             canvas.drawCircle(mRadius, mRadius, mRadius, mBitmapPaint);
         }
+    }
+
+    /**
+     * @return 多边形路径
+     */
+    private Path drawPath2() {
+        Path mPath = new Path();
+        mPath.moveTo(pointFList.get(0).x, pointFList.get(0).y);
+        for (int i = 1; i < angleCount; i++) {
+            mPath.lineTo(pointFList.get(i).x, pointFList.get(i).y);
+        }
+        /*for (int i = 2; i < angleCount; i++) {
+            if (i % 2 == 0) {// 除以二取余数，余数为0则为偶数,否则奇数
+                mPath.lineTo(pointFList.get(i).x, pointFList.get(i).y);
+            }
+
+        }
+
+        if (angleCount % 2 == 0) {  //偶数，moveTo
+            mPath.moveTo(pointFList.get(1).x, pointFList.get(1).y);
+        } else {                    //奇数，lineTo
+            mPath.lineTo(pointFList.get(1).x, pointFList.get(1).y);
+        }
+
+        for (int i = 3; i < angleCount; i++) {
+            if (i % 2 != 0) {
+                mPath.lineTo(pointFList.get(i).x, pointFList.get(i).y);
+            }
+        }*/
+
+        mPath.offset(startRadius, startRadius);
+        return mPath;
     }
 
     /**
@@ -336,7 +377,7 @@ public class MultiView extends android.support.v7.widget.AppCompatImageView {
     public void setType(int type) {
         if (this.type != type) {
             this.type = type;
-            if (this.type != TYPE_ROUND && this.type != TYPE_CIRCLE && this.type != TYPE_MULTI) {
+            if (this.type != TYPE_ROUND && this.type != TYPE_CIRCLE && this.type != TYPE_MULTI && this.type != TYPE_MULTI2) {
                 this.type = TYPE_CIRCLE;
             }
             requestLayout();
