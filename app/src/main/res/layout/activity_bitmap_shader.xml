@@ -82,14 +82,17 @@
             android:layout_marginLeft="20dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:background="@drawable/bg_c"
+            lb:angleCount="3"
+            lb:type="multi"
             android:src="@drawable/a"/>
 
         <org.hunter.irregularshapeviewlib.MultiView
             android:layout_marginLeft="20dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:background="@drawable/bg_d"
+            lb:angleCount="3"
+            lb:type="multi"
+            lb:currentAngle="180"
             android:src="@drawable/c"
             />
 
@@ -97,7 +100,9 @@
             android:layout_marginLeft="20dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:background="@drawable/bg_e"
+            lb:angleCount="3"
+            lb:type="multi"
+            lb:currentAngle="90"
             android:src="@drawable/b"
             />
     </LinearLayout>
@@ -113,7 +118,8 @@
             android:layout_marginLeft="20dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:background="@drawable/bg_one"
+            lb:angleCount="10"
+            lb:type="multi"
             android:src="@drawable/one"/>
 
     </LinearLayout>

@@ -3,12 +3,30 @@
 
     <item
         is-multidex="false"
+        jar="D:\git\Irregular-View\irregularshapeviewlib\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="480dab07477ec4b2de1e720034bb380e0e3be9bb">
+        <dex dex="D:\git\Irregular-View\app\build\intermediates\pre-dexed\debug\classes_aa5a5dba2c3b8487e536ec35f846b50373a3c5c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="D:\git\IrregularShapeView\irregularshapeviewlib\build\intermediates\bundles\default\libs\glide-3.6.1.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.0"
         sha1="015a639bd9933f4f812be8bede14f14bd1bdea8b">
         <dex dex="D:\git\IrregularShapeView\app\build\intermediates\pre-dexed\debug\glide-3.6.1_069f758d0df51fbb253613a3c3df7f5b1e964504.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\git\Irregular-View\irregularshapeviewlib\build\intermediates\bundles\default\libs\glide-3.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="015a639bd9933f4f812be8bede14f14bd1bdea8b">
+        <dex dex="D:\git\Irregular-View\app\build\intermediates\pre-dexed\debug\glide-3.6.1_6c0fb7c6c5220ce0fecf90424f6200aa3a479912.jar" />
     </item>
     <item
         is-multidex="false"
